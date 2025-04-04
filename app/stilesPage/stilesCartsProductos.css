@@ -1,0 +1,54 @@
+.contenedorCarts{
+    display: flex;
+    margin: 30px;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #DC362E;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 20px;
+    overflow-y:auto;
+    overflow-x: hidden; 
+    height: 500px;
+    scrollbar-width: none;
+
+}
+
+.cartaProductos{
+    margin: 10px;
+    width: 308px;  
+    height: 403px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+   
+}
+
+.imagenProducto{
+    display: flex; 
+    align-items: flex-start;
+    max-width:308px; /* dar limite maximo con base al contenedor del ancho */
+    max-height:150px ; /* dar limite maximo con base al contenedor del alto */
+    height: auto;
+    width: 280px;
+    padding: 15px;
+   
+}
+
+.parrafo{
+    display: block;
+    padding: 5%;  
+     
+}
+
+.precio{
+    display:flex;
+    padding-right:5%;
+    margin-top:-10px;
+    margin-left: auto;
+   
+}

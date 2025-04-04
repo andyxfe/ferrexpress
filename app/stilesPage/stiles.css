@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    margin: 10px;
+    overflow: hidden; /* Oculta el desplazamiento horizontal si existe */
+}
+
+.contenedorHeder {
+    display: flex;
+    justify-content: space-between; /* Distribuye elementos sin necesidad de "left" */
+    align-items: center;
+    padding: 10px 10%; /* Ajuste de espaciado */
+}
+
+.buscador {
+    width: 50%; /* Usa porcentaje en lugar de valores fijos */
+    max-width: 600px; /* Evita que sea demasiado grande en pantallas grandes */
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.iniciarSesion {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    position: static; /* Elimina el uso de left innecesario */
+}
+
+.logo {
+    height: 80px;
+    position: static; /* Elimina valores de posición innecesarios */
+}
+
+.carrito {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
