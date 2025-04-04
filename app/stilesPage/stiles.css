@@ -1,31 +1,49 @@
 body {
     display: flex;
     flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-    margin: 10px;
     overflow: hidden; /* Oculta el desplazamiento horizontal si existe */
+    @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;  
+      }  
 }
 
 .contenedorHeder {
     display: flex;
+    justify-items: auto;
+    margin: 0px 66px 0px 66px;
     justify-content: space-between; /* Distribuye elementos sin necesidad de "left" */
     align-items: center;
     padding: 10px 10%; /* Ajuste de espaciado */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius:20px;
 }
+.contenedorHeder a{
+    text-decoration: none;
+}
+ 
 
 .buscador {
     width: 50%; /* Usa porcentaje en lugar de valores fijos */
     max-width: 600px; /* Evita que sea demasiado grande en pantallas grandes */
     height: 50px;
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: 32px;
+    background-color: #0D0D10;
+    color: #545C74;
+    padding-left: 30px;
 }
 
 .iniciarSesion {
-    width: 150px;
+    margin: auto;
+    width: auto;
     height: 50px;
     font-size: 20px;
     border-radius: 10px;
     position: static; /* Elimina el uso de left innecesario */
+    text-decoration: none;
+    box-shadow: 5px 5px 10px 5px #545c743f;
+    border:3px;
 }
 
 .logo {
@@ -34,7 +52,9 @@ body {
 }
 
 .carrito {
-    height: 80px;
+    margin: auto;
+    font-size: 39px;
     display: flex;
     flex-direction: row;
+    color: #f40909;
 }

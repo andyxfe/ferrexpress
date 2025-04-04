@@ -1,0 +1,89 @@
+.contenedorcompras{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    margin: 10px 66px;
+}
+.cartaProductosCarrito{
+    width: 98%; /* Tamaño de la carta */
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex; /* Esto está bien para usar flexbox dentro de la carta */
+    flex-direction: row; /* Asegúrate de que el contenido dentro de la carta esté en fila */
+    box-sizing: border-box;
+    justify-content: space-between; /* Para distribuir los elementos dentro de la carta */
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding:15px;
+}
+.contenidoTotalCarrito{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Separa el texto y el precio */
+    flex-grow: 1;
+    padding: 10px 20px;  
+}
+.imagenProductoCarrito{
+    display: flex; 
+    align-items: flex-start;
+    max-width:308px; /* dar limite maximo con base al contenedor del ancho */
+    max-height:150px ; /* dar limite maximo con base al contenedor del alto */
+    height: 100%;
+    width: 280px;
+    padding: 15px;
+    box-sizing: border-box;
+    object-fit: cover;
+   
+}
+
+.parrafoCarrito{
+    display: 1;
+    padding: 15px; 
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-word;
+     
+}
+.precioCarrito{
+    display:flex;
+    left: auto;
+    margin-left: 450px;
+    font-size: 1.5rem;
+    font-weight: bold;
+   
+}
+.precioProducto{
+    display:flex;
+    padding-right:1%;
+    flex-direction:column;
+   margin-left: 180px;
+   margin-top: 150px;
+    
+ }
+ 
+.contenedorTotalCompra{
+    width: 60%; /* Tamaño del contenedor total compra */
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column; /* Asegúrate de que los elementos dentro de este contenedor estén apilados */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.lineaDeTexto{
+    display:flex;
+    padding-right:2%;
+    margin-top: 5px;
+    flex-direction: column;
+    flex-direction: none;
+
+}
