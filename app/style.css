@@ -1,0 +1,34 @@
+body {
+    background-color: #ffff;
+    
+}
+.container { 
+    text-align: center;   
+    width: 1306px;
+    height: 189px;
+    background-color: #DC362E;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content:center;
+    gap: 50px;
+
+    
+   
+}
+.card {    
+    width: 200px;
+    height: 177px;
+    background-color: #ffff;
+    border-radius: 20px;
+  
+
+    
+
+   
+}
+
+
+a{
+    text-decoration:none;
+}
