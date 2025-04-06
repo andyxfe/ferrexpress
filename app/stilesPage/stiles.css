@@ -14,7 +14,7 @@ body {
     margin: 0px 66px 0px 66px;
     justify-content: space-between; /* Distribuye elementos sin necesidad de "left" */
     align-items: center;
-    padding: 10px 10%; /* Ajuste de espaciado */
+    padding: 10px 2%; /* Ajuste de espaciado */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     border-radius:20px;
 }
@@ -24,8 +24,8 @@ body {
  
 
 .buscador {
-    width: 50%; /* Usa porcentaje en lugar de valores fijos */
-    max-width: 600px; /* Evita que sea demasiado grande en pantallas grandes */
+    width: 100%; /* Usa porcentaje en lugar de valores fijos */
+    max-width: 800px; /* Evita que sea demasiado grande en pantallas grandes */
     height: 50px;
     font-size: 20px;
     border-radius: 32px;
@@ -36,10 +36,11 @@ body {
 
 .iniciarSesion {
     margin: auto;
-    width: auto;
+    width: 150%;
     height: 50px;
     font-size: 20px;
     border-radius: 10px;
+    cursor: pointer;
     position: static; /* Elimina el uso de left innecesario */
     text-decoration: none;
     box-shadow: 5px 5px 10px 5px #545c743f;
@@ -53,8 +54,94 @@ body {
 
 .carrito {
     margin: auto;
+    margin-left: 100px;
     font-size: 39px;
     display: flex;
     flex-direction: row;
     color: #f40909;
+}
+.carrito:hover{
+    background-color: #3534343b;
+    border-radius: 5px;
+
+}
+.contenedorMenu{
+    position: relative;
+    display: inline-block;
+    
+
+}
+.menu {
+    margin: auto;
+    font-size: 55px;
+    display: flex;
+    flex-direction: row;
+    color: #f40909;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Contenido desplegable (inicialmente oculto) */
+.contenedordesplegable{
+    display: none;
+    position: absolute;
+    right: 10%;
+    background-color: #0D0E10;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.contenedordesplegable a{
+    text-align: center;
+    color: #545C74;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+.contenedordesplegable a:last-child{
+    border-bottom: none;
+}
+
+.contenedordesplegable a:hover{
+    background-color:#545C74;
+    color: #0D0E10;
+}
+
+.contenedorMenu:hover .contenedordesplegable{
+    display: block;
+}
+
+.menu:hover {
+    background-color: #3534343b;
+}
+
+body {
+    background-color: #ffff;
+    
+}
+.container { 
+    text-align: center;   
+    width: 1306px;
+    height: 189px;
+    background-color: #DC362E;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content:center;
+    gap: 50px;
+}
+.card {    
+    width: 200px;
+    height: 177px;
+    background-color: #ffff;
+    border-radius: 20px; 
+}
+
+
+a{
+    text-decoration:none;
 }
