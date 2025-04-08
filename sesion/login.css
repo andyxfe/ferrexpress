@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+html, body {
+    height: 100%;
+    overflow: hidden; /* esto bloquea el scroll */
+}
+
+.containerLogin{
+    height: 100vh;              /* altura total de la pantalla */
+    width: 100vw;               /* ancho total de la pantalla */
+    display: flex;
+    justify-content: center;    /* centrar horizontalmente */
+    align-items: center;        /* centrar verticalmente */
+    background-color: #ce4646;  /* opcional: color de fondo */
+
+    
+}.cardLogin{
+    background-color: rgb(255, 255, 255);
+    width: 867px;
+    height: 904px;
+    border-radius: 32px;
+    gap: 50px;
+    text-align: center;
+    padding: 30px;
+    
+}
+form {
+    display: flex;
+    flex-direction: column; /* elementos en columna */
+    align-items: center;     /* centra horizontalmente */
+    justify-content: center; /* opcional, centra verticalmente si tiene altura fija */
+    gap: 15px;  
+  }
+  
+.input-login {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+
+button{
+    background-color: #FF0000;
+    color: #ffff;
+    border-radius: 8px;
+    width: 250px;
+    height: 32px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p a{
+    text-decoration: none;
+}
+
+label{
+    margin-right: 190px;
+}
+
+img{
+    padding: 70px;
+}
+
+h2{
+    padding-bottom: 60px;
+}
+
+
