@@ -1,0 +1,259 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:#ce4646;
+}
+
+.contenedorGeneral {
+    margin: 40px;
+    width: 600px; /* Aumenta el ancho para escritorio */
+    height: auto;
+    padding: 30px; /* Aumenta el padding para más espacio */
+    background-color: rgb(223, 214, 214);
+    border-radius: 10px; /* Esquinas más redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+}
+
+.logoRegistro {
+    text-align: center;
+    margin-bottom: 30px; /* Más espacio debajo del logo */
+}
+
+.logoR {
+    max-width: 400px; /* Logo un poco más grande */
+}
+
+.formularioR {
+    display: flex;
+    flex-direction: column;
+}
+.inputs1Registro{
+    display: flex;
+    flex-direction: row;
+    gap: 245px;
+}
+
+.inputs2Registro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.inputs2Registro div{
+    width: 48%; /* Ajusta el ancho para dejar un pequeño espacio entre ellos */
+}
+
+.inputs1Registro p, .inputs3Registro p   {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+
+.inputs2Registro input, .inputs3Registro input {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    font-size: 16px; /* Aumenta el tamaño de la fuente */
+}
+
+.inputRegistro, .botonR {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.inputRegistro input, .botonR button {
+    width: 30%; /* Botones más anchos */
+    padding: 12px 20px;
+    background-color: #f50c0c;
+    color: #ddd;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px; /* Aumenta el tamaño de la fuente */
+}
+
+.inputRegistro :hover{
+    background-color: #f84c4c;
+    align-items: center;
+
+}
+
+
+.tyc {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.tyc div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+    gap: 10px;
+}
+
+.tyc a {
+    text-decoration: none;
+    color: #080808;
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+.tyc p {
+    margin-top: 0px;
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+.tyc input[type="checkbox"] {
+    margin: 0;
+    margin-left: 15px;
+    padding: 0;
+    width: auto;
+    height: 16px;
+    width: 16px;
+}
+.botonR a{
+    text-decoration: none;
+    color: #ddd;
+}
+.botonR button:hover {
+    background-color: #f84c4c;
+}
+
+/*estilos celular*/
+
+@media (max-width: 400px){
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f4f4f4;
+    }
+    
+    .contenedorGeneral {
+        margin: 50px;
+        width: 90%; /* Usa porcentaje para responsive */
+        max-width: 350px; /* Limit the maximum width on larger phones */
+        padding: 20px;
+        background-color: rgb(223, 214, 214);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .logoRegistro {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .logoR {
+        max-width: 150px;
+    }
+    
+    .formularioR {
+        display: flex;
+        flex-direction: column;
+    }
+    .inputs1Registro{
+        
+    }
+
+    .inputs1Registro p {
+        font-size: 50px;
+    }
+
+    .inputs2Registro, .inputs3Registro {
+        margin-bottom: 15px;
+    }
+    
+    .inputs3Registro p {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    .inputs2Registro input, .inputs3Registro input {
+        width: calc(100% - 18px); /* Adjust for padding and border */
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    
+    /* Adjust input2 so they are inline */
+    .inputs2Registro{
+      display: flex;
+      justify-content: space-between;
+    }
+    .inputs2Registro input{
+      width: auto;
+        }
+    
+    .botonRegistrarse, .botonR {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .botonRegistrarse button, .botonR button {
+        width: 100%;
+        padding: 10px;
+        background-color: #ff0000;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .botonRegistrarse button:hover, .botonR button:hover {
+        background-color: #f73333;
+    }
+    
+    .tyc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    .tyc div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    
+    .tyc a {
+        text-decoration: none;
+        color: #050505;
+        margin-left: 5px;
+    }
+    
+    .tyc p {
+        font-size: 16px;
+        margin-left: 5px;
+    }
+    
+    .tyc input[type="checkbox"] {
+        display: flex;
+        float: left ;
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+
+}
