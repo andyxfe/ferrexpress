@@ -1,0 +1,28 @@
+.contenedor-foother {
+    margin: 10px 66px 0px 66px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    background-color: #f9f9f9;
+    color: rgb(10, 10, 10);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.referencia {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.referencia a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.referencia a:hover {
+    color: #5e5757;
+}

@@ -13,7 +13,7 @@ body {
     justify-content: space-between; /* Distribuye elementos sin necesidad de "left" */
     align-items: center;
     padding: 10px 2%; /* Ajuste de espaciado */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.3);
     border-radius:20px;
 }
 .contenedorHeder a{
