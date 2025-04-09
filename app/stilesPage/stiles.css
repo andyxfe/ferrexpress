@@ -5,7 +5,15 @@ body {
     overflow-x: hidden;
     
 }
-
+.contenedorCarts a{
+    
+    color:#0D0D10;
+    text-decoration: none;
+}
+.contenedorCarts a:hover{
+    background-color:#545c7424;
+    text-decoration: none;
+}
 .contenedorHeder {
     display: flex;
     justify-items: auto;
@@ -149,6 +157,3 @@ body {
 }
 
 
-a{
-    text-decoration:none;
-}

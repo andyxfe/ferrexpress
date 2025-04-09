@@ -34,6 +34,7 @@
     height: 100%;
     width: 280px;
     padding: 15px;
+    border-radius: 15px;
     box-sizing: border-box;
     object-fit: cover;
    
