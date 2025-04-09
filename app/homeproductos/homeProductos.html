@@ -33,14 +33,14 @@
 
     <div class="main-box">
       <div class="image-box">
-        <img class="main-img" src="/img/taladrosimagen.png" />
+        <img id="imagenPrincipal" class="main-img" src="/img/taladrosimagen.png" />
       </div>
   
       <div class="left-box">
-        <div class="cotenedorindivual"><i><img src="/img/taladrosimagen.png" alt="" class="cotenedorindivualimagenes"></i></div>
-        <div class="cotenedorindivual"><i><img src="/img/taladro2.png" alt="" class="cotenedorindivualimagenes"></i></div>
-        <div class="cotenedorindivual"><i><img src="/img/taladro3.png" alt="" class="cotenedorindivualimagenes"></i></div>
-        <div class="cotenedorindivual"><i><img src="/img/taladro4.png" alt="" class="cotenedorindivualimagenes"></i></div>
+        <div class="cotenedorindivual"><img src="/img/taladrosimagen.png" alt="" class="cotenedorindivualimagenes" onclick="cambiarImagen(this)"></div>
+        <div class="cotenedorindivual"><img src="/img/taladro2.png" alt="" class="cotenedorindivualimagenes" onclick="cambiarImagen(this)"></div>
+        <div class="cotenedorindivual"><img src="/img/taladro3.png" alt="" class="cotenedorindivualimagenes" onclick="cambiarImagen(this)"></div>
+        <div class="cotenedorindivual"><img src="/img/taladro4.png" alt="" class="cotenedorindivualimagenes" onclick="cambiarImagen(this)"></div>
       </div>
     </div> 
 
@@ -52,6 +52,14 @@
     </div>
   
   </div>
+
+  <script>
+    function cambiarImagen(elemento) {
+      const imagenPrincipal = document.getElementById('imagenPrincipal');
+      imagenPrincipal.src = elemento.src;
+    }
+  </script>
+  
 </body>
 
 <footer class="contenedor-foother" id="fotercontenedor">
